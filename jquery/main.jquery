@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('.carousel').carousel({
+  interval: 100
+})
+}
+)
+
+$(document).ready(function(){
+  $("button").hover(function(){
+    $("p").hide();
+  });
+});
