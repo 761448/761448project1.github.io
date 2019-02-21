@@ -1,5 +1,5 @@
 function jfun1(){
-    windows.open('signin.html','mywindow')
+    window.open('signin.html','mywindow')
     
 }
 function jfun2(){
