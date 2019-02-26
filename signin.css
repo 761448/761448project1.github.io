@@ -2,3 +2,8 @@
    
     width: 240px;
 }
+#center{
+    padding: 220px 300px;
+
+    text-align: center;
+}
