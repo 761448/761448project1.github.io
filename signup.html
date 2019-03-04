@@ -8,13 +8,156 @@
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-          
+            <link rel="stylesheet" href="css/index-stylebackup.css">
+            <script src="js/indexbackup.js"></script>
+            <script src="jquery/indexbackup.jquery"></script>
             <link rel="stylesheet" href="css/signin.css">
             <script src="js/signup.js"></script>
 
     </head>
     <body>
-        <form name="signup" onsubmit="return validateForm()" method="POST">
+            <div class="container-fluid">
+                    <div class="row" id="header">
+                      <div class="col-sm-6"></div>
+                      <div class="col-sm-6">
+                          <nav>
+                            <ul>
+                              <a href="#"><li>careers&nbsp;&nbsp;&nbsp; <span class="tooltiptext">careers</span> </li></a>
+                              <a href="#"><li>news&nbsp;&nbsp;&nbsp; <span class="tooltiptext">news</span> </li></a>
+                              <a href="signup.html"><li>sign-up&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-up</span> </li></a>
+                              <a href="signin.html"><li>sign-in&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-in</span> </li></a>
+                              <a href="#"><li><div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    worldwide
+                                  </button>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="search-bttn" onclick="openSearch()">&nbsp;&nbsp;&nbsp;<img src="images/search-button.png" height="22px" width="22px"></li>
+                            </ul>    
+                          </nav>   
+                      </div>    
+                    </div>
+                    <div id="myOverlay" class="overlay">
+                        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                        <div class="overlay-content">
+                          <form>
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        </div>
+                      </div>
+                    <div class="row" id="row2" id="myHeader" onscroll="myFunction()">
+                      <div class="col-sm-5">
+                        <a href="indexbackup.html"><div id="cognizant"><h2>cognizant</h2></div></a>
+                      </div>
+                      <div class="col-sm-7" id="second-inline">
+                        <ul>
+                          <li>
+                            <div class="dropdownmegamenu">
+                              <button class="dropbtn">industries
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                  <div class="megamenu">
+                                    <h2>Mega Menu</h2>
+                                  </div>   
+                                  <div class="ro">
+                                    <div class="colum">
+                                      <h3>Category 1</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 2</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 3</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="dropdownmegamenu">
+                              <button class="dropbtn">services 
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                  <div class="megamenu">
+                                    <h2>Mega Menu</h2>
+                                  </div>   
+                                  <div class="ro">
+                                    <div class="colum">
+                                      <h3>Category 1</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 2</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 3</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="dropdownmegamenu">
+                              <button class="dropbtn">latest thinking
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                  <div class="megamenu">
+                                    <h2>Mega Menu</h2>
+                                  </div>   
+                                  <div class="ro">
+                                    <div class="colum">
+                                      <h3>Category 1</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 2</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                    <div class="colum">
+                                      <h3>Category 3</h3>
+                                      <a href="#">Link 1</a>
+                                      <a href="#">Link 2</a>
+                                      <a href="#">Link 3</a>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </li> 
+                          <li class="about">about</li>   
+                        </ul>
+                      </div>
+                    </div>
+        <form name="signup" onsubmit="validateForm()" method="POST">
             <div class="container-fluid" id="center">
                 <div class="row" id="breakrow">
                     <div class="col">
@@ -70,7 +213,7 @@
                         re-enter password
                     </div>
                     <div class="col">
-                        <input type="password" placeholder="re-enter password here" name="re-password">
+                        <input type="password" placeholder="re-enter password here" name="repassword">
                     </div>
                 </div>
                 <div class="row" id="breakrow">

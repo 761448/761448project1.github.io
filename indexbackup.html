@@ -15,15 +15,15 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row" id="header">
+        <div class="row" id="header">
         <div class="col-sm-6"></div>
         <div class="col-sm-6">
             <nav>
               <ul>
                 <a href="#"><li>careers&nbsp;&nbsp;&nbsp; <span class="tooltiptext">careers</span> </li></a>
                 <a href="#"><li>news&nbsp;&nbsp;&nbsp; <span class="tooltiptext">news</span> </li></a>
-                <a href="#"><li>sign-up&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-up</span> </li></a>
-                <a href="#"><li>sign-in&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-in</span> </li></a>
+                <a href="signup.html"><li>sign-up&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-up</span> </li></a>
+                <a href="signin.html"><li>sign-in&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-in</span> </li></a>
                 <a href="#"><li><div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       worldwide
@@ -35,14 +35,24 @@
                     </div>
                   </div>
                 </li>
-                <li class="search-bttn">&nbsp;&nbsp;&nbsp;<img src="images/search-button.png" height="22px" width="22px"></li>
+                <li class="search-bttn" onclick="openSearch()">&nbsp;&nbsp;&nbsp;<img src="images/search-button.png" height="22px" width="22px"></li>
               </ul>    
             </nav>   
         </div>    
-      </div> 
-      <div class="row" id="row2" id="myHeader" onscroll="myFunction()">
+        </div>
+        <div id="myOverlay" class="overlay">
+          <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+          <div class="overlay-content">
+            <form>
+              <input class="searchtext" type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      <div id="aftermyOverlay">
+        <div class="row" id="row2" id="myHeader" onscroll="myFunction()">
         <div class="col-sm-5">
-          <div id="cognizant"><h2>cognizant</h2></div>
+          <a href="indexbackup.html"><div id="cognizant"><h2>cognizant</h2></div></a>
         </div>
         <div class="col-sm-7" id="second-inline">
           <ul>
@@ -145,8 +155,8 @@
             <li class="about">about</li>   
           </ul>
         </div>
-      </div>
-      <div class="row" id="row3">
+        </div>
+        <div class="row" id="row3">
         <div class="col">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval:500;>
             <ol class="carousel-indicators">
@@ -187,8 +197,8 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="row" id="row4">
+        </div>
+        <div class="row" id="row4">
         <div class="col-sm-6">
           <div class="news">
             <h3>news</h3>
@@ -230,20 +240,22 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="row" id="footer">
+        </div>
+        <div class="row" id="footer">
         <div class="col-sm-6">
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="#" class="fa fa-linkedin"></a>
         </div>
         <div class="col-sm-6">
-          <div>
-            sitemap
-            contact us
+          <div style="font-size:24px; text-transform:capitalize">
+            <a href="sitemap.html">sitemap</a>
+            &nbsp&nbsp&nbsp
+            <a href="contactus.html">contact us</a>
           </div>
         </div>  
-      </div>  
+        </div>  
+      </div>
     </div>  
   </body>
 </html>
