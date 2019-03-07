@@ -21,17 +21,29 @@
             <nav>
               <ul>
                 <a href="#"><li>careers&nbsp;&nbsp;&nbsp; <span class="tooltiptext">careers</span> </li></a>
-                <a href="#"><li>news&nbsp;&nbsp;&nbsp; <span class="tooltiptext">news</span> </li></a>
+                <a href="news.html"><li>news&nbsp;&nbsp;&nbsp; <span class="tooltiptext">news</span> </li></a>
                 <a href="signup.html"><li>sign-up&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-up</span> </li></a>
                 <a href="signin.html"><li>sign-in&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-in</span> </li></a>
-                <a href="#"><li><div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#"><li><div class="dropdownmegamenu">
+                    <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:22px;">
                       worldwide
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-content">
+                        <div class="ro">
+                            <div class="colum">
+                              <h3>Category 1</h3>
+                              <a href="#"><img src="images/india.jpg" width="12px" height="12px">India</a>
+                              <a href="#"><img src="images/china.png" width="12px" height="12px">China</a>
+                             
+                            </div>
+                            <div class="colum">
+                              <h3>Category 2</h3>
+                              <a href="#"><img src="images/bangladesh.png" width="12px" height="12px">bangladesh</a>
+                              <a href="#"><img src="images/usa.png" width="12px" height="12px">USA</a>
+                             
+                            </div>
+                           
+                          </div>
                     </div>
                   </div>
                 </li>
@@ -43,20 +55,20 @@
         <div id="myOverlay" class="overlay">
           <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
           <div class="overlay-content">
-            <form>
-              <input class="searchtext" type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
+            <form style="padding:200px 0;">
+              <input class="searchtext" type="text" placeholder="Search.." name="search" style="padding:10px;">
+              <button type="submit" style="padding:10px;" ><i class="fa fa-search"></i></button>
             </form>
           </div>
         </div>
       <div id="aftermyOverlay">
-        <div class="row" id="row2" id="myHeader" onscroll="myFunction()">
+        <div class="row" id="row2" id="myHeader" onscroll="myFunction()" class="fixed-header" >
         <div class="col-sm-5">
-          <a href="indexbackup.html"><div id="cognizant"><h2>cognizant</h2></div></a>
+          <a href="indexbackup.html" style="text-decoration:none"><div id="cognizant"><h2>cognizant</h2></div></a>
         </div>
         <div class="col-sm-7" id="second-inline">
           <ul>
-            <li>
+            <li style="transition-delay:13s;">
               <div class="dropdownmegamenu">
                 <button class="dropbtn">industries
                   <i class="fa fa-caret-down"></i>
@@ -152,7 +164,17 @@
                 </div>
               </div>
             </li> 
-            <li class="about">about</li>   
+            <li>
+                <div class="dropdownmegamenu">
+                    <button class="dropbtn">about
+                     
+                    </button>
+                    <div class="dropdown-content">
+                         
+                  
+                    </div>
+                  </div>
+            </li>   
           </ul>
         </div>
         </div>
@@ -206,17 +228,17 @@
 
               10 January 2019
               Intelligent CIO Europe: Cognizant’s Head of Digital Business, Europe...
-              <button class="readmore">Read More</button>
+              <a href="news1.html"><button class="readmore">Read More</button></a> 
             </p>
             <p class="end-paragraph">
               8 January 2018
               L’Agefi, France: Cognizant’s Head Markets Insurance, Continental Europe...
-              <button class="readmore">Read More</button>
+              <a href="news2.html"><button class="readmore">Read More</button></a>
             </p>
             <p class="end-paragraph">
               8 January 2019
               Forbes, U.S.: Cognizant’s AVP, Center for the Future of Work...
-              <button class="readmore">Read More</button>
+              <a href="news3.html"><button class="readmore">Read More</button></a>
             </p>
           </div>
         </div>

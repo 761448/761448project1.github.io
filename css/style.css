@@ -1,0 +1,322 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+  
+  .container {
+    margin: 0 auto;
+  
+    padding: 0px 10px;
+  }
+
+  
+  
+  .header {
+    background: url(../images/bike.jpg); 
+    background-size: cover;
+    height: 800px;
+    text-align: center; 
+  }
+  
+  .header .container {
+    position: relative;
+    top: 200px;
+  }
+  
+  .header h1 {
+    color: #fff;
+    line-height: 100px; 
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase; 
+  }
+  
+  @media (min-width:850px) {
+    .header h1 {
+      font-size: 120px;
+    }
+  }
+  
+  .header p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+    
+  }
+  
+  .btn {
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    text-decoration: none; 
+    transition: background .5s; 
+  }
+   .header .btn{
+       background-color: black;
+       padding: 10px 10px;
+       height: 50px;
+   }
+  
+  .nav { 
+    background: black;
+    height: 80px; 
+    width: 100%;
+  }
+
+  .nav .container {
+    padding: 0px  200px;
+  
+
+  }
+  
+  .nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto; 
+    padding: 0;
+  }
+  
+  .nav ul li {
+      font-size: 20px;
+    color: #fff;
+    display: inline-block; 
+    height: 80px;
+    line-height: 80px; 
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s; 
+  }
+  
+  .btn:hover, .nav ul li:hover {
+    background: #117bff;
+    cursor: pointer; 
+    transition: background .5s;  
+  }
+
+  .demo{
+      background-color: floralwhite
+  }
+  
+  .main .container {
+    margin: 80px auto;
+  }
+
+  .main .container p{
+      font-size: 15px
+  }
+  
+  .main img {
+    float: left;
+    margin: 50px 80px 50px 0;
+  }
+  
+  .jumbotron1 {
+    background: url(../images/c1.jpg) center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%; 
+  }
+   
+  .jumbotron2 {
+    background: url(../images/c2.jpg) center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%; 
+  }
+  .jumbotron3 {
+    background: url(../images/c3.jpg) center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%; 
+  }
+  
+  .jumbotron1 .container {
+    position: relative;
+    top: 220px;
+  }
+
+  .jumbotron2 .container {
+    position: relative;
+    top: 220px;
+  }
+  .jumbotron3 .container {
+    position: relative;
+    top: 220px;
+  }
+  
+  .jumbotron1 h2 {
+    color:white;
+    text-align: center; 
+  }
+
+  .jumbotron2 h2 {
+    color:white;
+    text-align: center; 
+  }
+
+  .jumbotron3 h2 {
+    color:white;
+    text-align: center; 
+  }
+  
+  .jumbotron1 p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+    text-align: right
+  }
+
+  .jumbotron2 p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+    text-align: right
+  }
+
+  .jumbotron3 p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase; 
+    text-align: right
+  }
+  
+  .jumbotron1 .btn {
+      text-align: right;
+     right: 220px;
+      font-size: 30px;
+    margin: 10px 0 0;
+    float: center;
+  }
+
+  .jumbotron2 .btn {
+    text-align: right;
+   right: 220px;
+    font-size: 30px;
+  margin: 10px 0 0;
+  float: center;
+}
+
+.jumbotron3 .btn {
+    text-align: right;
+   right: 220px;
+    font-size: 30px;
+  margin: 10px 0 0;
+  float: center;
+}
+  
+  .footer { 
+    background-color: black;
+    height: 80px; 
+    padding-bottom: 50px;
+  }
+  
+  .footer p { 
+    color: #fff;
+    font-size: 14px;  
+    height: 80px; 
+    line-height: 80px;
+    margin: 0;  
+  }
+  
+  @media (max-width: 500px) {
+    .header h1 {
+      font-size: 50px;
+      line-height: 64px;
+    }
+  
+    .main, .jumbotron {
+      padding: 0 30px;
+    }
+  
+    .main img {
+      width: 100%;
+    }
+  }
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  
+  }
+  
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: cursor;
+   
+  }
+  #dropdownMenuButton{
+    background: black;
+    border: 12px;
+    font-size: 20px;
+    font-weight: normal;
+    height: 76px;
+    padding: 2px black;
+   
+    margin-left: 12px;
+ 
+  }
+  #dropdownMenuButton:hover{
+      background: #117bff;
+  }
+  .dropdown-item{
+    color: blue;
+   
+  }
+  .dropdown-item:hover{
+    background: black;
+    font-weight: strong;
+    color: white;
+  }
+
+  #case1{
+      background: rgb(219, 214, 214);
+      height: 35px;
+  }
+  
+  .container-fluid.row p{
+    font-family: Arial;
+    font-size: 12px;
+    padding: 12px;
+    color:black;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 122px;
+  }
+ 
+  #hide-dot{
+      list-style: none;
+  }
+  
+  .container-fluid.row ul{
+    display: inline;
+    list-style-position: 255px;
+  }
+  
+  .container-fluid .row{
+      background: rgb(201, 194, 194);
+      height: 60px;
+  }
+
+  #search{
+      height: 24px;
+      width: 24px;
+  }

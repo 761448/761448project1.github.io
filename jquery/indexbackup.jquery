@@ -1,0 +1,10 @@
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 120) {
+        $('#myHeader div').addClass('fixed-header');
+        
+    }
+    else {
+        $('#myHeader div').removeClass('fixed-header');
+       
+    }
+});

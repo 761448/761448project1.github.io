@@ -1,0 +1,16 @@
+#btn{
+    border-radius: 12px;
+    color: white;
+    background: green
+}
+#search-image{
+    height: 22px;
+    width: 22px;
+}
+ul li{
+   
+    text-transform: capitalize;
+}
+#globe{
+    list-style-image: url(../images/globe.gif) ;
+}

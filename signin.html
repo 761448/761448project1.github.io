@@ -13,31 +13,35 @@
       <script src="js/signin.js"></script>
 
   </head>
-  <body>
-    <form action="jfun3()" name="frm1" >
-      <div class="container" id="center">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-4">
-            username
+  <body style="background:rgb(230, 236, 241)">
+    
+    <form name="frm1" >
+      <div class="container" id="center" style="background:white; border:55px solid rgb(230, 236, 241); padding:20px; width: 730px; height: 430px;">
+        <h3 style="font-weight:normal;">Log in to Cognizant</h3><br>
+        <div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-4" style="border-bottom: 15px solid white;">
+              username
+            </div>
+            <div class="col-4" style="border-bottom: 15px solid white;">
+              <input type="text" name="name" required placeholder="click here to enter username"  title="first letter should be capital" id="change-width">
+            </div>
           </div>
-          <div class="col-4">
-            <input type="text" name="name" required placeholder="click here to enter username" pattern="[A-Z]?+{1,}" title="first letter should be capital" id="change-width">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-4" style="border-bottom: 15px solid white;">
+              password
+            </div>
+            <div class="col-4" style="border-bottom: 15px solid white;">
+              <input type="text" name="password" required placeholder="click here to enter password"  title="password must be atleast 8 characters long" id="change-width">
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-4">
-            password
+          <div class="row justify-content-center align-items-center">
+            <div class="col-4">
+              <input type="submit" value="Submit" onclick="login()" style="width:100px;">
+            </div>
           </div>
-          <div class="col-4">
-            <input type="text" name="password" required placeholder="click here to enter password" pattern=".{8,}" title="password must be atleast 8 characters long" id="change-width">
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-4">
-            <input type="submit" value="Submit">
-          </div>
-        </div>
-      </div>  
+        </div> 
+      </div> 
     </form>
   </body>
 </html>

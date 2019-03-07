@@ -1,0 +1,12 @@
+#change-width{
+   
+    width: 240px;
+}
+#center{
+    padding: 110px 240px;
+
+    text-align: center;
+}
+#breakrow{
+    border-bottom: 25px solid white;
+}
