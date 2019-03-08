@@ -1,25 +1,202 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="css/index-stylebackup.css">
+            <script src="js/indexbackup.js"></script>
+            <script src="jquery/indexbackup.jquery"></script>
+            <script src="js/signup.js"></script>
     </head>
-    <body style="background:lightgray; text">
-        <form name="frm2" >
-            <input type="text" placeholder="First name"> <input type="text" placeholder="Last name">
-            <input type="radio" name="radio1">female <input type="radio" name="radio1">male
-            <input type="text" placeholder="Mobile number">
-            <input type="text" placeholder="Email address">
-            <input type="text" placeholder="New password">
-            <input type="text" placeholder="Re-enter password">
-            <input type="text" placeholder="Organisation Name">
-            <select>
+    <body style="background:lightgray;">
+      <div>
+            <div class="row" id="header">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">
+                        <nav>
+                          <ul>
+                            <a href="#"><li>careers&nbsp;&nbsp;&nbsp; <span class="tooltiptext">careers</span> </li></a>
+                            <a href="news.html"><li>news&nbsp;&nbsp;&nbsp; <span class="tooltiptext">news</span> </li></a>
+                            <a href="signup.html"><li>sign-up&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-up</span> </li></a>
+                            <a href="signin.html"><li>sign-in&nbsp;&nbsp;&nbsp; <span class="tooltiptext">sign-in</span> </li></a>
+                            <a href="#"><li><div class="dropdownmegamenu">
+                                <button  class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:22px;">
+                                  worldwide
+                                </button>
+                                <div class="dropdown-content">
+                                    <div class="ro">
+                                        <div class="colum">
+                                          <h3>Category 1</h3>
+                                          <a href="#"><img src="images/india.jpg" width="12px" height="12px">India</a>
+                                          <a href="#"><img src="images/china.png" width="12px" height="12px">China</a>
+                                         
+                                        </div>
+                                        <div class="colum">
+                                          <h3>Category 2</h3>
+                                          <a href="#"><img src="images/bangladesh.png" width="12px" height="12px">bangladesh</a>
+                                          <a href="#"><img src="images/usa.png" width="12px" height="12px">USA</a>
+                                         
+                                        </div>
+                                       
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="search-bttn" onclick="openSearch()">&nbsp;&nbsp;&nbsp;<img src="images/search-button.png" height="22px" width="22px"></li>
+                          </ul>    
+                        </nav>   
+                    </div>    
+                    </div>
+                    <div id="myOverlay" class="overlay">
+                      <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                      <div class="overlay-content">
+                        <form style="padding:200px 0;">
+                          <input class="searchtext" type="text" placeholder="Search.." name="search" style="padding:10px;">
+                          <button type="submit" style="padding:10px;" ><i class="fa fa-search"></i></button>
+                        </form>
+                      </div>
+                    </div>
+                  <div id="aftermyOverlay">
+                    <div class="row" id="row2" id="myHeader" onscroll="myFunction()" class="fixed-header" >
+                    <div class="col-sm-5">
+                      <a href="indexbackup.html" style="text-decoration:none"><div id="cognizant"><h2>cognizant</h2></div></a>
+                    </div>
+                    <div class="col-sm-7" id="second-inline">
+                      <ul>
+                        <li style="transition-delay:13s;">
+                          <div class="dropdownmegamenu">
+                            <button class="dropbtn">industries
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="megamenu">
+                                  <h2>Mega Menu</h2>
+                                </div>   
+                                <div class="ro">
+                                  <div class="colum">
+                                    <h3>Category 1</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 2</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 3</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdownmegamenu">
+                            <button class="dropbtn">services 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="megamenu">
+                                  <h2>Mega Menu</h2>
+                                </div>   
+                                <div class="ro">
+                                  <div class="colum">
+                                    <h3>Category 1</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 2</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 3</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="dropdownmegamenu">
+                            <button class="dropbtn">latest thinking
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="megamenu">
+                                  <h2>Mega Menu</h2>
+                                </div>   
+                                <div class="ro">
+                                  <div class="colum">
+                                    <h3>Category 1</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 2</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                  <div class="colum">
+                                    <h3>Category 3</h3>
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        </li> 
+                        <li>
+                            <div class="dropdownmegamenu">
+                                <button class="dropbtn">about
+                                 
+                                </button>
+                                <div class="dropdown-content">
+                                     
+                              
+                                </div>
+                              </div>
+                        </li>   
+                      </ul>
+                    </div>
+                    </div>
+        <form name="frm2" style="background:white; width: 700px; padding: 40px 40px; border: 2px solid rgb(228, 225, 225); margin: auto;" >
+            <h3 style="color:blue;">fill the form below:</h3><br>
+            <input type="text" required placeholder="First name" style="border-radius:5px; "> <input type="text" required placeholder="Last name" style="border-radius:5px;"><br><br>
+            <input type="radio" name="radio1">female &nbsp&nbsp&nbsp <input type="radio" name="radio1">male<br><br>
+            <input type="text" placeholder="Mobile number" style="border-radius:5px; width: 344px;"><br><br>
+            <input type="text" placeholder="Email address" style="border-radius:5px; width: 344px;"><br><br>
+            <input type="text" placeholder="New password" name="password1" style="border-radius:5px; width: 344px;"><br><br>
+            <input type="text" placeholder="Re-enter password" name="password2" style="border-radius:5px; width: 344px;"><br><br>
+            <input type="text" placeholder="Organisation Name" style="border-radius:5px; width: 344px;"><br><br>
+            <select style="border-radius:5px;">
                 <option>India</option>
                 <option>Middle East</option>
                 <option>Europe</option>
-            </select>
-            <input type="text" placeholder="any message">
-            <button>submit</button>
-
+            </select><br><br>
+            <input type="text" placeholder="any message" style="border-radius:5px; width: 344px; height: 100px;"><br><br>
+            <button onclick="signupfunction()">submit</button>
+     
         </form>
-    </body>
+    </div>
+  </body>
 </html>
